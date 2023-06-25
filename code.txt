@@ -16,7 +16,7 @@ def set_alarm():
         root.after(int(time_diff * 1000), lambda: trigger_alarm(message_entry.get()))
 
 def trigger_alarm(message):
-    webbrowser.open("https://www.youtube.com/watch?v=VZNXhRghr4A")  # Replace with desired alarm sound video URL
+    webbrowser.open("https://www.youtube.com/watch?v=VZNXhRghr4A") 
     messagebox.showinfo("Alarm", message)
     set_button.config(state=tk.NORMAL)
 
